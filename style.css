@@ -54,6 +54,14 @@ a:hover {
     border-radius: 50%;
     border: rgb(31, 253, 31) 2px dotted;
     height: 350px;
+
+    /* Add transition duration to profile image */
+    transition-duration: 0.4s;
+}
+
+/* Add transition duration to profile image upon hover */
+.about-me img:hover {
+    border-radius: 25%;
 }
 
 /* Center h1 tag */
@@ -71,6 +79,12 @@ a:hover {
 h1 {
     font-size: 3rem;
     text-shadow: 5px 5px 10px rgb(31, 253, 31, 0.7);
+    transition-duration: 0.4s;
+}
+
+/* Add expand animation effect using transition */
+h1:hover {
+    font-size: 5rem;
 }
 
 /* Set contact information to bottom right */
@@ -82,6 +96,12 @@ h1 {
 .contact p {
     font-size: 1rem;
     line-height: 0px;
+    transition-duration: 0.4s;
+}
+
+/* Add expand animation effect using transition */
+.contact p:hover {
+    font-size: 1.2rem;
 }
 
 /* Format each section under technologies in flexbox, row, and space-between */
@@ -106,6 +126,12 @@ h1 {
 /* Project images */
 .game-div > div > img {
     height: 120px;
+    transition-duration: 0.4s;
+}
+
+/* Project images */
+.game-div > div > img:hover {
+    height: 180px;
 }
 
 /* Projects */
@@ -208,6 +234,7 @@ form * {
 }
 
 /* Add css stylng to buttons on hover */
+/* Add button hover effects */
 button:hover {
     /* makes the button green*/
     background-color: rgb(31, 253, 31);
