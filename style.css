@@ -16,9 +16,9 @@ body {
     /*background: linear-gradient(rgb(19, 19, 19), rgb(0, 63, 55), rgb(19, 19, 19));*/
     background-color:rgb(19, 19, 19);
     color: rgb(31, 253, 31);
-    line-height: 30px;
+    line-height: 2rem;
     border: green 5px solid;        /* adds a green 5px border around the body */
-    margin: 32px;
+    margin: 24px;
     padding: 32px;
 }
 
@@ -111,12 +111,6 @@ h1:hover {
     font-size: 1.2rem;
 }
 
-/* Format each section under technologies in flexbox, row, and space-between */
-#Technologies {
-    display: flex;
-    justify-content: space-between;
-}
-
 /* Center tools table*/
 #Tools {
     display: flex;
@@ -168,12 +162,6 @@ h1:hover {
 .message {
     display: flex;
     justify-content: flex-end;
-}
-
-/* Set all h2 elements to uppercase */
-h2 {
-    text-transform: uppercase;
-    font-size: 1.5rem;
 }
 
 /* Apply padding to headers to provide spacing and ensure content doesn't feel cramped */
@@ -283,16 +271,85 @@ textarea::placeholder, input::placeholder {
     padding-bottom: 96px;
 }
 
-/* Between 480px - 999px, this will be in effect */
-@media (min-width: 480px) {
-    body {
+/* Set all h2 elements to uppercase */
+h2 {
+    text-transform: uppercase;
+    font-size: 1rem;
+}
 
+/* Between 480px - 999px, this will be in effect */
+/* Iphone 13 mini */
+@media (min-width: 480px) {
+
+    /* Set all h2 tags */
+    h2 {
+        font-size: 4rem;
+    }
+
+    h2 + p {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    /* Selects all p tags right after h2 tags */
+    /* Selects all p tags nested in education class */
+    h2 + p, 
+    .education + ul > li > p {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    /* Select all h3 tags */
+    h3 {
+        font-size: 2.7rem;
+    }
+
+    /* Select all li's after a ul thats after an h3 */
+    h3 + ul > li {
+        font-size: 2.5rem;
+        line-height: 2.7rem;
+    }
+
+    /* Format each section under technologies in flexbox, row, and space-between */
+    .technologies {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 }
 
 /* 1000px or greater, this will be in effect */
+/* Desktop computer */
 @media (min-width: 1000px) {
-    body {
-        
+
+    /* Set all h2 tags */
+    h2 {
+        font-size: 2rem;
+    }
+
+    /* Selects all p tags right after h2 tags */
+    /* Selects all p tags nested in education class */
+    h2 + p, 
+    .education + ul > li > p {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    /* Select all h3 tags */
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    /* Select all li's after a ul thats after an h3 */
+    h3 + ul > li {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    /* Format each section under technologies in flexbox, row, and space-between */
+    .technologies {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
