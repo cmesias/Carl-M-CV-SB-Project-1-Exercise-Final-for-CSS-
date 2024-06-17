@@ -42,7 +42,8 @@ How to increase font size without moving other elements:
         *        font-size: 6rem;
         *    }
 
-
+Media @ explanation:
+- https://www.w3schools.com/cssref/css3_pr_mediaquery.php
 
 
 

@@ -7,9 +7,11 @@
 html {
     font-family: "Plus Jakarta Sans", Arial, sans-serif;
     font-weight: 700;
+    font-size: 16px;
 }
 
 /* Set the body style */
+/* 480px and below, this will be in effect */
 body {
     /*background: linear-gradient(rgb(19, 19, 19), rgb(0, 63, 55), rgb(19, 19, 19));*/
     background-color:rgb(19, 19, 19);
@@ -281,4 +283,16 @@ textarea::placeholder, input::placeholder {
     padding-bottom: 96px;
 }
 
-/****************** Adjusted form below to capture the same look and feel of example ******************/
+/* Between 480px - 999px, this will be in effect */
+@media (min-width: 480px) {
+    body {
+
+    }
+}
+
+/* 1000px or greater, this will be in effect */
+@media (min-width: 1000px) {
+    body {
+        
+    }
+}
