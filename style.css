@@ -111,12 +111,6 @@ h1:hover {
     font-size: 1.2rem;
 }
 
-/* Center tools table*/
-#Tools {
-    display: flex;
-    justify-content: center;
-}
-
 /* Projects */
 .game-div {
     display: flex;
@@ -167,12 +161,6 @@ h1:hover {
 /* Apply padding to headers to provide spacing and ensure content doesn't feel cramped */
 h1, h2, h3 {
     padding-bottom: 2rem;
-}
-
-/* For all table head elements */
-/* Sets font size to be 1.3 times html's font size */
-th {
-    font-size: 1.2rem;
 }
 
 /* This will implement the css box-model such as margin, padding & border into each section */
@@ -291,6 +279,17 @@ h2 {
         line-height: 4rem;
     }
 
+    /* For all table head elements */
+    th {
+        font-size: 3.4rem;
+    }
+
+    /* For all table data elements */
+    td {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
     /* Selects all p tags right after h2 tags */
     /* Selects all p tags nested in education class */
     h2 + p, 
@@ -316,6 +315,18 @@ h2 {
         flex-direction: column;
         justify-content: space-between;
     }
+
+    /* Center tools table*/
+    #Tools {
+        display: flex;
+        justify-content: flex-start;
+        overflow-x: auto;
+    }
+
+    /* Horizontal spacing between each th element */
+    table {
+        border-spacing: 5rem 3rem;
+    }
 }
 
 /* 1000px or greater, this will be in effect */
@@ -335,6 +346,17 @@ h2 {
         line-height: 2rem;
     }
 
+    /* For all table head elements */
+    th {
+        font-size: 1.5rem;
+    }
+
+    /* For all table data elements */
+    td {
+        font-size: 1.2rem;
+        line-height: 2.4rem;
+    }
+
     /* Select all h3 tags */
     h3 {
         font-size: 1.4rem;
@@ -351,5 +373,17 @@ h2 {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    /* Center tools table*/
+    #Tools {
+        display: flex;
+        justify-content: flex-start;
+        overflow-x: auto;
+    }
+
+    /* Horizontal spacing between each th element */
+    table {
+        border-spacing: 10rem 0px;
     }
 }
