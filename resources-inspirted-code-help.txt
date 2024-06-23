@@ -57,7 +57,8 @@ Inspiration for contact me form for mobile & desktop devices:
 Box shadows:
 - https://www.w3schools.com/cssref/css3_pr_box-shadow.php
 
-
+CSS Selector by attribute:
+- https://www.w3schools.com/css/css_attribute_selectors.asp
 
 
 

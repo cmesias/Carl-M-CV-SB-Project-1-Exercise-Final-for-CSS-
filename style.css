@@ -38,25 +38,18 @@ a:hover {
     text-decoration: underline;
 }
 
-/****************************************************/
-/*          Picture, Name & Contact info            *
- * Set display as flex, and set as space-between to *
- * space out the three items inside this div        *
- *                                                  *
- */
+/* About me */
 .about-me {
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
     margin: 0;
     padding: 32px;
-    height: 450px;
 
     /* This will add a background image to the about-me section */
     background-image: url("https://images.unsplash.com/photo-1641002921619-4db51d58c21f?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-size:cover;
 }
 
-/* Set profile picture perfectly rounded */
+/* Set profile picture rounded */
 .about-me img {
     border-radius: 50%;
     border: rgb(31, 253, 31) 2px dotted;
@@ -66,23 +59,12 @@ a:hover {
     transition-duration: 0.4s;
 }
 
-/* Add transition duration to profile image upon hover */
+/* Set profile picture upon hover */
 .about-me img:hover {
     border-radius: 25%;
 }
 
-/* Center h1 tag */
-.container-h1, .contact {
-    display: flex;
-    flex-direction: column;
-}
-
-/* Center h1 in section */
-.container-h1 {
-    justify-content: center;
-}
-
-/* Center h1 tag */
+/* Set h1 font-size */
 h1 {
     font-size: 3rem;
     text-shadow: 5px 5px 10px rgb(31, 253, 31, 0.7);
@@ -95,20 +77,9 @@ h1:hover {
 }
 
 /* Set contact information to bottom right */
-.contact {
-    justify-content: flex-end;
-}
-
-/* Set contact information to bottom right */
 .contact p {
-    font-size: 1rem;
     line-height: 0px;
     transition-duration: 0.4s;
-}
-
-/* Add expand animation effect using transition */
-.contact p:hover {
-    font-size: 1.2rem;
 }
 
 /* Small message below projects */
@@ -174,6 +145,11 @@ h2 {
         line-height: 3rem;
     }
 
+    /* Add expand animation effect using transition */
+    .contact p:hover {
+        font-size: 2.2rem;
+    }
+
     /*******************************************/
     /******************** Inputs ***************/
 
@@ -201,27 +177,19 @@ h2 {
     /* Container form items*/
     .container-forms-items {
         font-size: 2.5rem;
-        width: 100%;
         /* Give space under each container item */
         margin-bottom: 32px;
-        /* border: red 1px dotted; */
     }
 
     /* Give space under labels for each form */
     .labels {
-        margin-bottom: 24px;
+        margin-bottom: 50px;
     }
 
     /* Align to right side */
     .inputs {
         right: 0;
     }
-
-    /* Align to right side */
-    .inputs > input {
-        height: 100px;
-    }
-
     /* Give these the same size as paragraphs */
     .inputs > input,
     .inputs > select,
@@ -244,13 +212,21 @@ h2 {
         margin-left: 24px;
     }
 
-    /* Set a dotted border around our textarea, inputs that have type text and our select element */
+    /* Select all inputs in our form */
     .form-text {
         padding: 8px;
+        padding-left: 32px;
         background-color: rgba(19, 19, 19);
-        border: rgb(31, 253, 31) 1px dotted;
+        border: none;
         color: rgb(31, 253, 31);
         width: 100%;
+        height: 100px;
+        border-radius: 15px;
+    }
+
+    /* Select the textarea input in our form */
+    textarea[class="form-text"] {
+        height: 400px;
     }
 
     /******************** Inputs ***************/
@@ -375,7 +351,10 @@ h2 {
         line-height: 3rem;
     }
 
-    
+    /* Add expand animation effect using transition */
+    .contact p:hover {
+        font-size: 1.5rem;
+    }
 
     /*******************************************/
     /******************** Inputs ***************/
@@ -398,6 +377,7 @@ h2 {
         border: none;
         box-shadow: 20px 20px 50px rgb(8, 8, 8);
         background-color: rgb(37, 37, 37);
+        border-radius: 10px;
         width: 50%;
         margin: 0 auto;
     }
@@ -420,12 +400,6 @@ h2 {
     /* Align to right side */
     .inputs {
         right: 0;
-    }
-
-    /* Align to right side */
-    .inputs > input
-    {
-        height: 100%;
     }
 
     /* Give these the same size as paragraphs */
@@ -453,11 +427,14 @@ h2 {
     /* Set a dotted border around our textarea, inputs that have type text and our select element */
     .form-text {
         padding: 8px;
+        padding-left: 16px;
         background-color: rgba(2, 2, 2, 0.4);
-        border: rgb(31, 253, 31) 1px dotted;
+        border: none;
         color: rgb(31, 253, 31);
         margin-left: 6px;
         width: 300px;
+        height: 100%;
+        border-radius: 15px;
     }
 
     /******************** Inputs ***************/
