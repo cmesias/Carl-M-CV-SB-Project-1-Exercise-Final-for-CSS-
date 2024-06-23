@@ -293,9 +293,10 @@ h2 {
     /* Selects all p tags right after h2 tags */
     /* Selects all p tags nested in education class */
     h2 + p, 
-    .education + ul > li > p {
+    .education + ul > li > p,
+    .achievements + ol > li {
         font-size: 3rem;
-        line-height: 4rem;
+        line-height: 5rem;
     }
 
     /* Select all h3 tags */
@@ -341,9 +342,10 @@ h2 {
     /* Selects all p tags right after h2 tags */
     /* Selects all p tags nested in education class */
     h2 + p, 
-    .education + ul > li > p {
+    .education + ul > li > p,
+    .achievements + ol > li {
         font-size: 1.2rem;
-        line-height: 2rem;
+        line-height: 3rem;
     }
 
     /* For all table head elements */
