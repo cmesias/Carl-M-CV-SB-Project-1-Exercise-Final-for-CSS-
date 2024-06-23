@@ -321,7 +321,7 @@ h2 {
     /* Select all lists, table data and paragraphs */
     li, td, p
     {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         line-height: 3rem;
     }
 
@@ -343,7 +343,6 @@ h2 {
     table {
         border-spacing: 10rem 0px;
     }
-
 
     /* Projects */
     .game-div {
