@@ -48,11 +48,14 @@ Media @ explanation:
 Scrollable Table in HTML
 - https://stackoverflow.com/questions/40669221/html-table-scroll-on-phone
 
+How to resize checkboxes
+- https://www.geeksforgeeks.org/how-to-set-checkbox-size-in-html-css/
 
+Inspiration for contact me form for mobile & desktop devices:
+- https://stripe.com/contact/sales
 
-
-
-
+Box shadows:
+- https://www.w3schools.com/cssref/css3_pr_box-shadow.php
 
 
 
